@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" type="text/css" href="./login.css">
+    <style>
+        h3 {
+          color: hsl(175, 100%, 50%);
+          font-family: verdana;
+          font-size: 150%;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+        }
+        </style>
+</head>
+<body style="background-color:#1c87c9;" >
+  <h3>Welcome to MyTeleHealth</h3>  
+  <div class = "login-form">
+      <h3>Login Form</h3>
+      <form action="#" method ="post">
+          <p> User Name</p>
+          <input type="text" name="user" placeholder="User Name"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+          <p>Password</p>
+          <input type ="password" name="password" placeholder="Password"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"required/>
+           
+<form> 
+          <p>Location</p>
+          <select name = "dropdown">
+            <option value = "a" selected>3 mile radius</option>
+            <option value = "b">5 mile radius</option>
+            <option value = "c" required>10 mile radius</option>
+            <option value = "d" >20 mile radius</option>
+            <option value = "e">30 mile radius</option>
+            </select>
+            <br>
+            <br>
+          <button type="submit">Log In</button>
+      </form>
+  </div>
+  
+</body>
+</html>
